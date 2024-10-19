@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LearnNest - Home Tuition Portal</title>
+		<link rel="stylesheet" href="{% static 'css/home.css' %}">
+	</head>
+	<body>
+		<header>
+			<h1>LearnNest - Home Tuition Portal</h1>
+			<nav>
+				<a href="login-learner.html">Learner Login</a>
+				<a href="login-tutor.html">Tutor Login</a>
+				<a href="book-exam.html">Book Exam</a>
+			</nav>
+		</header>
+
+		<!-- Introduction Section -->
+		<section class="intro-section">
+			<div class="intro-text">
+				<h2>Importance Of Choosing The Right Curriculum</h2>
+				<p>
+				Choosing the right curriculum is an important decision that can have a significant impact on a student’s academic and professional future.
+				The right curriculum can provide students with a well-rounded education, helping develop critical skills such as problem-solving, communication,
+				and collaboration.
+				</p>
+			</div>
+			<div class="intro-image">
+				<img src="{% static 'img/learning.jpg' %}" alt="Choosing the Right Curriculum">
+			</div>
+		</section>
+
+		<!-- Available Tests Section -->
+		<section class="tests-section">
+			<h3>Available Tests</h3>
+			<div class="test-list">
+				<a href="emsat.html" class="test-item">EmSAT</a>
+				<a href="act.html" class="test-item">ACT</a>
+				<a href="ap.html" class="test-item">Advanced Placements</a>
+				<a href="ucat.html" class="test-item">UCAT</a>
+			</div>
+		</section>
+
+		<!-- Subjects Section -->
+		<section class="subjects-section">
+			<h3>Subjects Offered</h3>
+			<div class="subject-list">
+				<a href="english.html" class="subject-item">English</a>
+				<a href="french.html" class="subject-item">French</a>
+				<a href="spanish.html" class="subject-item">Spanish</a>
+				<a href="computer-science.html" class="subject-item">Computer Science</a>
+				<a href="economics.html" class="subject-item">Economics</a>
+				<a href="biology.html" class="subject-item">Biology</a>
+				<a href="chemistry.html" class="subject-item">Chemistry</a>
+				<a href="physics.html" class="subject-item">Physics</a>
+				<a href="maths.html" class="subject-item">Maths</a>
+				<a href="business-studies.html" class="subject-item">Business Studies</a>
+				<a href="accounting.html" class="subject-item">Accounting</a>
+			</div>
+		</section>
+
+		<!-- Book Examination Section -->
+		<section class="book-exam">
+			<h3>Book an Examination Center</h3>
+			<table class="exam-table">
+				<thead>
+					<tr>
+						<th>Test Type</th>
+						<th>Test Fees</th>
+						<th>Test Date</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>IELTS Academic & General Training (on Computer)</td>
+						<td>38,760 KES</td>
+						<td>Choose Date</td>
+						<td><button>Book Now</button></td>
+					</tr>
+					<tr>
+						<td>IELTS Academic & General Training (on Paper)</td>
+						<td>38,760 KES</td>
+						<td>Choose Date</td>
+						<td><button>Book Now</button></td>
+					</tr>
+				</tbody>
+			</table>
+			<p>For updated fees and pricing, please visit the dedicated test centres pages.</p>
+		</section>
+
+		<!-- Exam Centers Section -->
+		<section class="exam-centers">
+			<h3>Examination Centers</h3>
+			<div class="center-list">
+				<div class="center-item">
+					<h4>Uniabroad Kenya – Eldoret - On Paper</h4>
+					<p>Daima Towers, Mezzanine 2 floor, Eldoret, Kenya</p>
+				</div>
+				<div class="center-item">
+					<h4>Center 2 Name</h4>
+					<p>Center 2 Address</p>
+				</div>
+				<div class="center-item">
+					<h4>Center 3 Name</h4>
+					<p>Center 3 Address</p>
+				</div>
+				<div class="center-item">
+					<h4>Center 4 Name</h4>
+					<p>Center 4 Address</p>
+				</div>
+				<div class="center-item">
+					<h4>Center 5 Name</h4>
+					<p>Center 5 Address</p>
+				</div>
+				<div class="center-item">
+					<h4>Center 6 Name</h4>
+					<p>Center 6 Address</p>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<p>&copy; 2024 LearnNest. All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>
