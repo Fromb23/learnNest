@@ -10,130 +10,170 @@ body {
 	background-color: #f9f9f9;
 }
 
-.header {
-	background-color: #0056b3;
-	color: white;
-	padding: 10px 20px;
+/* Header */
+header {
+	background-color: #3b5998; /* Updated header color */
+	padding: 15px; /* Reduced padding */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	color: white;
 }
 
-.header .logo h1 {
-	font-size: 24px;
-	font-weight: bold;
+header h1 {
+	margin: 0;
+	font-size: 28px; /* Reduced font size */
+	flex: 1;
 }
 
-.navbar a {
+nav {
+	position: relative;
+	flex: 2;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	position: relative;
+	margin: 0 15px;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+/* Dropdown Styles */
+nav ul li .dropdown {
+	display: none;
+	position: absolute;
+	background-color: #3b5998; /* Consistent dropdown background */
+	min-width: 160px;
+	z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+	display: block;
+}
+
+nav ul li .dropdown a {
+	display: block;
+	padding: 10px;
 	color: white;
 	text-decoration: none;
-	margin: 0 15px;
-	font-size: 16px;
 }
 
-.intro {
-    padding: 40px;
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
+nav ul li .dropdown a:hover {
+	background-color: #334d84; /* Darker shade on hover */
 }
 
-.intro-content {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    align-items: center;
+/* Introduction Section */
+.intro-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px;
+	background-color: #f9f9f9; /* Light background for contrast */
 }
 
 .intro-text {
-    flex: 1;
-    padding-right: 20px;
+	flex: 1;
+	max-width: 600px; /* Limit the width of the text */
+	padding-right: 20px; /* Space between text and image */
 }
 
 .intro-text h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #0056b3;
+	text-align: center; /* Center the title */
+	font-size: 28px; /* Adjust title font size */
+	margin-bottom: 20px; /* Space below the title */
 }
 
 .intro-text p {
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-align: justify;
+	font-size: 16px; /* Font size for paragraph */
+	line-height: 1.6; /* Improve readability */
 }
 
 .intro-image {
-    flex: 1;
-    text-align: right;
+	flex: 1;
+	text-align: right; /* Align the image to the right */
 }
 
 .intro-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 100%; /* Ensure image is responsive */
+	height: auto; /* Maintain aspect ratio */
 }
 
 /* Tests Section */
 .tests-section {
-    padding: 40px;
-    background-color: #f9f9f9;
-    text-align: center;
+	padding: 40px;
+	background-color: #f9f9f9;
+	text-align: center;
 }
 
 .tests-section h3 {
-    font-size: 28px;
-    color: #0056b3;
-    margin-bottom: 20px;
+	font-size: 28px;
+	color: #0056b3;
+	margin-bottom: 20px;
 }
 
 .test-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
 }
 
 .test-item {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #0056b3;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	width: 200px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Subjects Section */
 .subjects-section {
-    padding: 40px;
-    background-color: #fff;
-    text-align: center;
+	padding: 40px;
+	background-color: #fff;
+	text-align: center;
 }
 
 .subjects-section h3 {
-    font-size: 28px;
-    color: #0056b3;
-    margin-bottom: 20px;
+	font-size: 28px;
+	color: #0056b3;
+	margin-bottom: 20px;
 }
 
 .subject-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
 }
 
 .subject-item {
-    background-color: #f39c12;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #f39c12;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	width: 200px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .curriculums {
@@ -211,92 +251,92 @@ body {
 
 /* Tests Section */
 .tests-section, .subjects-section {
-    padding: 40px;
-    background-color: #f9f9f9;
-    text-align: center;
+	padding: 40px;
+	background-color: #f9f9f9;
+	text-align: center;
 }
 
 h3 {
-    font-size: 28px;
-    color: #0056b3;
-    margin-bottom: 20px;
+	font-size: 28px;
+	color: #0056b3;
+	margin-bottom: 20px;
 }
 
 .test-list, .subject-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
 }
 
 .test-item, .subject-item {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
+	background-color: #0056b3;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	width: 200px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-decoration: none;
 }
 
 /* Book Exam Section */
 .book-exam {
-    padding: 40px;
-    text-align: center;
-    background-color: #fff;
+	padding: 40px;
+	text-align: center;
+	background-color: #fff;
 }
 
 .exam-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
 }
 
 .exam-table th, .exam-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
+	padding: 10px;
+	border: 1px solid #ddd;
+	text-align: center;
 }
 
 button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+	background-color: #28a745;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 /* Exam Centers Section */
 .exam-centers {
-    padding: 40px;
-    background-color: #f9f9f9;
-    text-align: center;
+	padding: 40px;
+	background-color: #f9f9f9;
+	text-align: center;
 }
 
 .center-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
 }
 
 .center-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .center-item h4 {
-    font-size: 20px;
-    color: #0056b3;
+	font-size: 20px;
+	color: #0056b3;
 }
 
 .center-item p {
-    font-size: 16px;
-    color: #333;
+	font-size: 16px;
+	color: #333;
 }
 
 .footer {
