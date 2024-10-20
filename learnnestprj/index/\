@@ -1,0 +1,13 @@
+from django.shortcuts import render
+from .models import Student, Tutor
+from .forms import StudentForm, TutorForm
+
+def home(request):
+    return render(request, 'index/home.html')
+
+def admin_dashboard(request):
+    students = Student.objects.all()
+    tutors = Tutor.objects.all()
+    return render(request, 'index/admin_dashboard.html', {'students': students, 'tutors': tutors})
+
+def create_student(request):

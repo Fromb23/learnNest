@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Create Tutor</title>
+	</head>
+	<body>
+		<h1>Add Tutor</h1>
+		<form method="POST">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<button type="submit">Create Tutor</button>
+		</form>
+		<a href="{% url 'admin_dashboard' %}">Back to Dashboard</a>
+	</body>
+</html>

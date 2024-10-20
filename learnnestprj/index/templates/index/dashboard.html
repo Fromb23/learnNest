@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <title>User Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="{% static 'img/profile-icon.png' %}" alt="Profile" class="profile-icon">
+                <h3>User Name</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Welcome to Your Dashboard</h1>
+                <div class="profile-icon">
+                    <img src="{% static 'img/profile-icon.png' %}" alt="Profile">
+                </div>
+            </header>
+            <section class="content">
+                <!-- Additional content goes here -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
