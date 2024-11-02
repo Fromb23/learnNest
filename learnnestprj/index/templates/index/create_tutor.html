@@ -1,14 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head><title>Create Tutor</title>
+		<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 	</head>
-	<body>
-		<h1>Add Tutor</h1>
-		<form method="POST">
-			{% csrf_token %}
-			{{ form.as_p }}
-			<button type="submit">Create Tutor</button>
+	<body class="bg-light">
+		<div class="container mt-5">
+			<div class="row justify-content-center">
+				<div class="col-md-6">
+					<h1 class="text-center mb-4">Add Tutor</h1>
+					<div class="card shadow p-4">
+						<form method="POST" id="createTutorForm">
+							{% csrf_token %}
+							<div class="form-group">
+								{{ form.as_p }}
+							</div>
+							<!-- Submit button with modal trigger -->
+
+			<button type="submit" class="btn btn-primary btn-block" data-toggle="modal" data-target="#confirmModal">Create Tutor</button>
+		<a href="{% url 'admin_dashboard' %}" class="btn btn-secondary btn-block mt-2">Back to Dashboard</a>
 		</form>
-		<a href="{% url 'admin_dashboard' %}">Back to Dashboard</a>
 	</body>
 </html>
